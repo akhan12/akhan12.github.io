@@ -1,184 +1,335 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adam Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/animate.min.css">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
-						</ul>
-					</nav>
+    </head>
 
-				<!-- Main -->
-					<div id="main">
+    <body>
+        <!--Loading gif-->
+        <div class="loading-gif"></div>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
+        <div id="page">
+            <!---->
+            <header id="portfolio-header" class="portfolio-cover js-fullheight" 
+            style="background-image:url(images/cover.jpeg);">
+                <div class="overlay"></div>
+                <div class="container-fluid">
+                    <!--Menu-->
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <div class="container-fluid"> 
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <img src="images/menu.svg" alt="">
+                          </button>
+                          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                              <li class="nav-item"><a class="nav-link"  href="#my-portfolio-about">About</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#my-portfolio-work">Portfolio</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#my-portfolio-resume">Resume</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#my-portfolio-skills">Skills</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#my-portfolio-started">Contact</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                      <!--Front Matter-->
+                      <div class="row">
+                          <!--text-center overflows to children-->
+                          <div class="col text-center">
+                              <div class="display-tc js-fullheight" style="height: 577px">
+                                <div class="profile-thumb" style="background:url(images/my_photo.jpg)"></div>
+                                <h1><span>- Adam Khan -</span></h1>
+                                <h3><span>Electrical & Computer Engineer</span></h3>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </header>
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Magna veroeros</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+            <!---->
+            <section id="my-portfolio-about">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h2>About Me</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-12">
+                    <ul class="info">
+                      <li><span class="first-block">Full Name:</span><span class="second-block">Adam Khan</span></li>
+                      <li><span class="first-block">Phone:</span><span class="second-block">+1(868)729-7756</span></li>
+                      <li><span class="first-block">Email:</span><span class="second-block"><a href = "mailto: akhan.ak45@gmail.com">akhan.ak45@gmail.com</a></span></li>
+                      <li><span class="first-block">Location:</span><span class="second-block">Trinidad and Tobago</span></li>
+                      <li><a href="https://drive.google.com/file/d/12M64MROI0tO2CbBXuspcQbS-CpbilafS/view?usp=sharing"
+                          target="_blank">Download my Resume</a></li>
+                    </ul>
+                  </div>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+                  <div class="col-lg-7 offset-lg-1 col-sm-12 col-12">
+                    <p><b>Hello there!</b></p>
+                    <p>I’m Adam, an Instructor with a background in Electrical and Computer Engineering. My strengths are
+                      creativity, teamwork and attention to details.</p>
+                    <p>From a young age, I was passionate and curious about Computers, Software, Electronics and generally
+                       how things worked.
+                       I remember always always taking apart electronics in the house: XBOX, Playstations and computers. </p>
+                    <p>My experience in an Industrial Plant helped me cultivate skills to work in teams while managing and completing projects.
+                      At the University, working as an instructor helped me develop working autonomously, and with COVID-19 working remotely. Developing
+                      coursework and laboratory exercises helped me hone my skills in learning new technologies quickly. However, I've decided that it is time
+                      for a career shift into Software Engineering.
+                    </p>
+                    <p>In my spare time, I hike, drone photography and videography from hikes usually, gym, and researching new things</p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+           
+            <section id="my-portfolio-work">
+              <div class="container">
+                <div class="col-md-12 text-center my-portfolio-heading">
+                  <h2>Projects</h2>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <a href="#" class="work" style="background-image:url(images/project01.png);">
+                      <!-- <div class="desc"> 
+                        <h3>BMates</h3>
+                        <span>class="technologies">HTML | CSS | JavaScript | React | Ruby | Rails | PostgreSQL | Material
+                          UI</span>
+                      </div>-->
+                    </a>
+                    <p><a href="#" target="_blank" class="project-source-code">Source Code</a></p>
+                  </div>
+                  <div class="col-md-3 text-center">
+                    <a href="#" class="work" style="background-image:url(images/project02.gif);">
+                      <!-- <div class="desc"> 
+                        <h3>BMates</h3>
+                        <span>class="technologies">HTML | CSS | JavaScript | React | Ruby | Rails | PostgreSQL | Material
+                          UI</span>
+                      </div>-->
+                    </a>
+                    <p><a href="#" target="_blank" class="project-source-code">Source Code</a></p>
+                  </div>
+                  <div class="col-md-3 text-center">
+                    <a href="#" class="work" style="background-image:url(images/project03.png);">
+                      <!-- <div class="desc"> 
+                        <h3>BMates</h3>
+                        <span>class="technologies">HTML | CSS | JavaScript | React | Ruby | Rails | PostgreSQL | Material
+                          UI</span>
+                      </div>-->
+                    </a>
+                    <p><a href="#" target="_blank" class="project-source-code">Source Code</a></p>
+                  </div>
+                  <div class="col-md-3 text-center">
+                    <a href="#" class="work" style="background-image:url(images/project04.png);">
+                      <!-- <div class="desc"> 
+                        <h3>BMates</h3>
+                        <span>class="technologies">HTML | CSS | JavaScript | React | Ruby | Rails | PostgreSQL | Material
+                          UI</span>
+                      </div>-->
+                    </a>
+                    <p><a href="#" target="_blank" class="project-source-code">Source Code</a></p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+            </section>
 
-					</div>
+            <section id="my-portfolio-resume">
+              <div>
+              <div class="container">
+                <div class="col-md-12 text-center my-portfolio-head">
+                  <h2>My Resume</h2>
+                </div>
+                <div class="row">
+                  <!-- 
+                  <div class="col-md-12 text-center">
+                    <h3><span>Work Experience</span></h3>
+                  </div> -->
+                  <div class="col-md-12 col-md-offset-0">
+                    <ul class="timeline" style="list-style-type:none;">
+                      <li class="timeline-heading">
+                        <h3><span>Work Experience</span></h3>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+                      </li>
+                      <li class="animate-box timeline-unverted">
+                        <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h3 class="timeline-title">Instructor I</h3>
+                            <span class="company">University of the West Indies - 2017 - Present (Full-Time)</span>
+                          </div>
+                          <div class="timeline-body">
+                            <p>- Teach courses in the Electrical and Computer Engineering Department</p>
+                            <p>- Design tutorials for practical applications of theoretical materials</p>
+                            <p>- Lead on Communication Systems laboratory experiments and exercises</p>
+                            <p>- Development, preparation and marking of coursework assignments</p>
 
-			</div>
+                          </div>
+                        </div>
+                        </li>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                        <li class="animate-box timeline-inverted">
+                          <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <h3 class="timeline-title">Graduate-in-Training (Electical and Instrumentation)</h3>
+                              <span class="company">Industrial Plant Services Ltd. - 2014 - 2016 (Full-Time)</span>
+                            </div>
+                            <div class="timeline-body">
+                              <p>- Performed preventative maintenance on plant by monitoring threshold values for main support components</p>
+                              <p>- Routine diagnostic and prescription strategies done for various operations in Melamine Bagging</p>
+                              <p>- Cost and effort estimation and project roll outs for oil sampling operations on transformers</p>
+                            </div>
+                          </div>
+                          </li>
+                        <br>
+                        <li class="timeline-workexp">
+                          <div class="col-md-12 text-center">
+                            <h3><span>Education</span></h3>
+                          </div>                       
+                        </li>
+                        <li class="timeline-unverted animate-box">
+                          <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <h3 class="timeline-title">PhD Electrical and Computer Engineering</h3>
+                              <span class="company">The University of the West Indies - 2021 - Present</span>
+                            </div>
+                            <div class="timeline-body">
+                              <p>Model Order Reduction of Flapping Wing Dynamics using a Hybrid Aeroelastic Approach for Control</p>
+                            </div>
+                          </div>
+                        </li>
 
-	</body>
-</html>
+                        <li class="timeline-inverted animate-box">
+                          <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <h3 class="timeline-title">MASc Electrical and Computer Engineering</h3>
+                              <span class="company">The University of the West Indies - 2013 - 2016 (Graduated)</span>
+                            </div>
+                            <div class="timeline-body">
+                              <p>Development of 3D MoSART (Modelling Simulation Animation and Real-time Control) Environment
+                                for Dynamic Systems
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="timeline-unverted animate-box">
+                          <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <h3 class="timeline-title">BSc Electrical and Computer Engineering</h3>
+                              <span class="company">The University of the West Indies - 2008 - 2013 (Graduated)</span>
+                            </div>
+                            <div class="timeline-body">
+                              <p>3D Reconstruction of Extracted Dental Samples in MATLAB</p>
+                            </div>
+                          </div>
+                        </li>
+
+ 
+                      <div style="clear:both;"></div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            <section id="my-portfolio-skills">
+              <div class="container" >
+                <div class="row">
+                  <div class="col-md-12 text-center my-portfolio-headning">
+                    <h2 id="basic-waypoint">Skills</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                    src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="html">
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                      alt="css">
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                      alt="javascript" width="200px" height="55px">
+                  </div>
+        
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                      alt="react">
+                  </div>
+
+
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                      alt="mysql">
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
+                      alt="bootstrap">
+                  </div>
+
+                  <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                    <img class="skill-logo"
+                      src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                      alt="python">
+                  </div>
+                </div>
+              </div>
+
+            </section>
+        
+
+        <div id="my-portfolio-started" class="my-portfolio-bg-dark">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row animate-box">
+              <div class="col-md-12 text-center my-portfolio-heading">
+                <p><a href="mailto:akhan.ak45@gmail.com" class="btn btn-default btn-lg"><span id="ctme">Contact Me</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+        <!--Jquery Script-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!--Boostrap js-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!--Waypoints-->
+        <script src="js/noframework.waypoints.min.js"></script>
+        
+        <!--Main-->
+        <script src="js/main.js"></script>
+    </body>
